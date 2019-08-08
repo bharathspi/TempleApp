@@ -59,6 +59,8 @@
     <string name="error_notSelected">Please select any option</string>
     <string name="fetch_name">name</string>
     <string name="insert_data">Insert Data</string>
+    <string name="Toast_search_pooja">Selected To People Who Registered For Pooja</string>
+    <string name="Toast_search_donated">Selected To People Who Donated Money For Temple</string>
     <string name="nothingselected">Nothing selected</string>
     <string name="custompooja">Custom Pooja</string>
     <string name="amount_in_rs">Amount:                                         Rs.</string>
