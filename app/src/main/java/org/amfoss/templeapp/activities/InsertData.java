@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.CheckBox;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 import org.amfoss.templeapp.R;
 import org.amfoss.templeapp.databinding.InsertDataBinding;
@@ -25,8 +24,6 @@ public class InsertData extends AppCompatActivity {
 
     String id, name, poojaTyp, overall, money, paidCheck = "NOT PAID", amnt;
 
-    TextView txt;
-
     int flag;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +32,6 @@ public class InsertData extends AppCompatActivity {
 
         insertDataBinding = DataBindingUtil.setContentView(this, R.layout.insert_data);
         insertDataBinding.setOnclick(new Onclick());
-        txt = (TextView) findViewById(R.id.select_pooja);
     }
 
     public class Onclick {
@@ -83,7 +79,6 @@ public class InsertData extends AppCompatActivity {
                     insertDataBinding.totalView.setVisibility(View.VISIBLE);
                     insertDataBinding.spinner1.setVisibility(View.GONE);
                     insertDataBinding.moneyDonated.setVisibility(View.VISIBLE);
-                    insertDataBinding.selectPooja.setVisibility(View.GONE);
                     insertDataBinding.custompooja.setVisibility(View.GONE);
                     insertDataBinding.amount.setVisibility(View.GONE);
                     id = getResources().getString(R.string.DON);
